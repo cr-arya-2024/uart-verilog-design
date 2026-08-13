@@ -37,10 +37,12 @@ A complete, fully synthesizable Universal Asynchronous Receiver-Transmitter (UAR
 | `rx_data_out` | Output | 8 | Parallel data byte received |
 | `rx_rdy` | Output | 1 | High when valid byte is received |
 
+## Simulation & Waveforms
+
+The UART module was simulated using **Icarus Verilog** and verified in **GTKWave**. The testbench runs a loopback test (`assign rx = tx`) verifying sequential byte transfers (`0xA5` and `0x3C`).
+
+![UART Loopback Simulation Waveform](images/uart_waveform.png)
 
 
 
 
-```
-
-```
